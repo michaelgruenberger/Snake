@@ -7,7 +7,7 @@ let direction = 1;
 const width = 20;
 let appleIndex = 0;
 let score = 0;
-let intervalTime = 800;
+let intervalTime = 500;
 let speed = 0.9;
 let timerId = 0;
 
@@ -40,7 +40,7 @@ function startGame() {
     score = 0;
     displayScore.textContent = score;
     direction = 1;
-    intervalTime = 800;
+    intervalTime = 500;
     generateApples();
     currentSnake.forEach(index => squares[index].classList.add("snake"));
     timerId = setInterval(move, intervalTime);
